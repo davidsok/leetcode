@@ -6,15 +6,15 @@ def containDuplicate(nums: list) -> bool:
         if num not in res:
             res[num] = []
         res[num].append(num)
-    print(res)
-    if len(res[num]) > 1:
-        return True
+        print(res)
+        if len(res[num]) > 1:
+            return True
     return False
 
 # Time Complexity = O(nlog(n))
 # Space Complexity = O(n)
 
-print(containDuplicate([1,2,3,2]))
+print(containDuplicate([1,2,3,4,10]))
 
 
 #VS
@@ -28,4 +28,4 @@ def containDuplicate2(nums: list) -> bool:
 # Time Complexity = O(n^2)
 # Space Complexity = O(1)
 
-print(containDuplicate2([1,2,3,4]))    
+print(containDuplicate2([1,2,3,4,10,10]))    
