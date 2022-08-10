@@ -3,11 +3,11 @@ from typing import DefaultDict
 def containDuplicate(nums: list) -> bool:
     res = DefaultDict()
     for num in nums:
-        tup = num
-        if tup not in res:
-            res[tup] = []
-        res[tup].append(num)
-    if len(res[tup]) > 1:
+        if num not in res:
+            res[num] = []
+        res[num].append(num)
+    print(res)
+    if len(res[num]) > 1:
         return True
     return False
 
