@@ -6,7 +6,8 @@ def riverSizes(matrix):
                 length = dfs(i, j, matrix, visited)
                 results.append(length)
     print('All Rivers: ', results)
-    print('Longest River: ', max(results))        
+    print('Longest River: ', max(results))    
+    print(matrix)    
     return results
 
 def dfs(i, j, matrix, visited):
