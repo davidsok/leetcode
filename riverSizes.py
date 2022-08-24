@@ -1,6 +1,3 @@
-from io import RawIOBase
-
-
 def riverSizes(matrix):
     sizes = []
     rows = len(matrix)
