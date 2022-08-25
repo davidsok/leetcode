@@ -7,9 +7,9 @@ def maxSetSize(riceBags):
     for v in rb:
         res[v] = [v]
         for w in rb:
-            if v ** 2 == w:
+            if v ** 2 == w and v != 1:
                 res[v].append(w)
-            if res[v][-1] ** 2 == w:
+            if res[v][-1] ** 2 == w and w != 1:
                 res[v].append(w)
     print(res)       
     ans = max(len(x)for x in list(res.values()))
