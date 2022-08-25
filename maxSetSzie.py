@@ -16,5 +16,5 @@ def maxSetSize(riceBags):
 
     return ans
 maxSetSize([625,4,2,5,25,26])
-maxSetSize([625,16,4,2,25,26])
+maxSetSize([625,16,4,2,25,256])
 maxSetSize([5,4,2,15,25])    
