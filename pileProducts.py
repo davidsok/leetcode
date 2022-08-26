@@ -1,12 +1,12 @@
-def findMaxProducts(products):
-    minIndex = int(input())
-    maxIndex = int(input())
+def findMaxProducts(products, low, high):
+    # minIndex = int(input())
+    # maxIndex = int(input())
     output = []
-    if maxIndex > len(products):
+    if high > len(products):
         return 0
-    current = products[maxIndex]
+    current = products[high]
     output.append(current)
-    for i in range(maxIndex, minIndex, -1):
+    for i in range(high, low, -1):
         if products[i-1] == current:
             output.insert(0, current - 1)
             current = output[len(output)-1]
@@ -23,4 +23,4 @@ def findMaxProducts(products):
     return output
 
 products = [2, 9, 4, 7, 5, 2]   
-findMaxProducts(products)
+findMaxProducts(products, 0, 3)
