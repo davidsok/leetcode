@@ -18,9 +18,8 @@ def findMaxProducts(products, low, high):
             current = products[i]
             output.insert(0,current-1)
             current = output[len(output)-1]
-            # print(output)
     print(output)
     return output
 
 products = [2, 9, 4, 7, 5, 2]   
-findMaxProducts(products, 0, 3)
+findMaxProducts(products, 1, 3)
