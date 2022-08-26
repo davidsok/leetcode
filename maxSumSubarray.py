@@ -1,5 +1,6 @@
 def maxSumSubarray(arr, k):
     if k > len(arr):
+        print(-1)
         return -1
     start_idx = 0
     end_idx = k + 1
@@ -13,4 +14,4 @@ def maxSumSubarray(arr, k):
  
     
 
-maxSumSubarray([2, 1, 5, 1, 3, 2], k=3)
+maxSumSubarray([2, 1, 5, 1, 3, 2], k=8)
