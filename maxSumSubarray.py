@@ -1,13 +1,16 @@
 def maxSumSubarray(arr, k):
-    # window_sum, max_sum = 0,0 
     if k > len(arr):
         return -1
-    max_sum = 0
-    output = []
-    for i in range( len(arr)):
-        
-        max_sum = sum(arr[i:i+k])
-        output.append(max_sum)
+    start_idx = 0
+    end_idx = k + 1
+    window_sum = []
+    for i in range(start_idx, end_idx):
+        window_sum.append(sum(arr[i:i+k]))
+    ans = max(window_sum)
+    print(ans)
+    return ans
+
+ 
     
 
 maxSumSubarray([2, 1, 5, 1, 3, 2], k=3)
