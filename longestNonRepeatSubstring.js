@@ -26,19 +26,19 @@ function longestString(s) {
 }
 
 
-function longestString2(s) {
-    const charMap = {};
-    for (let v of s) {
-        if (!(v in charMap)) {
-            charMap[v] = 0;
-        }
-        charMap[v]++;
-    }
-    console.log(charMap);
-    return Object.keys(charMap).length;
+// function longestString2(s) {
+//     const charMap = {};
+//     for (let v of s) {
+//         if (!(v in charMap)) {
+//             charMap[v] = 0;
+//         }
+//         charMap[v]++;
+//     }
+//     console.log(charMap);
+//     return Object.keys(charMap).length;
 
-}
+// }
 
-console.log(longestString2("aabccbb"));
+console.log(longestString("aabccbb"));
 
-console.log(longestString2("aabbbc"));
+console.log(longestString("aabbbc"));
