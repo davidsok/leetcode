@@ -29,3 +29,4 @@ function fruitBasket(basket){
 }
 
 console.log(fruitBasket(['A', 'B', 'C', 'A', 'C']));
+console.log(fruitBasket(['A', 'B', 'C', 'A','D', 'D']));
