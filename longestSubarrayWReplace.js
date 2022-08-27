@@ -12,11 +12,11 @@ function longestArrayWReplacement(arr, k) {
             count++;
         }
         if ((windowEnd - windowStart + 1) - count > k) {
-            if (arr[windowStart] === 1) {
+            if (arr[windowStart]  === 1) {
                 count--;
             }
             windowStart++;
-        }
+        } 
         windowLength = Math.max(windowLength, windowEnd - windowStart + 1);
     }
     return windowLength;
