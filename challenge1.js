@@ -49,4 +49,6 @@ function permutation(s, pattern) {
 }
 
 console.log(permutation("oidbcaf", "abc"))
-console.log(permutation("odicf", "dc"))
+console.log(permutation("odicdf", "dc"))
+
+// TIME COM - O(N)
