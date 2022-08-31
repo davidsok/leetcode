@@ -9,6 +9,7 @@ def lonelyinteger(a):
         if value == 1:
             print(key)
             return key
+    return None
 
 lonelyinteger([1,2,3,4,5,3,2,1])
 lonelyinteger([34,95,34,64,45,95,16,80,80,75,3,25,75,25,31,3,64,16,31])
