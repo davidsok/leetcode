@@ -20,7 +20,7 @@ function challenge3(s, pattern) {
         patternMap[v]++;
     }
 
-    // console.log(patternMap);
+    console.log(patternMap);
 
     for (let windowEnd = 0; windowEnd < s.length; windowEnd++) {
         let rightChar = s[windowEnd];
@@ -28,9 +28,10 @@ function challenge3(s, pattern) {
             patternMap[rightChar]--;
             if (patternMap[rightChar] >= 0) {
                 matchCount++;
-                console.log('match', matchCount);
+                
             }
         }
+        console.log('match 1 = ', matchCount);
 
         while (matchCount === pattern.length) {
             if (minLength >= windowEnd - windowStart + 1) {
@@ -47,6 +48,7 @@ function challenge3(s, pattern) {
                 patternMap[leftChar]++;
             }
         }
+        console.log('match 2 = ', matchCount);
         
         
 
@@ -56,4 +58,4 @@ function challenge3(s, pattern) {
 }
 
 console.log(challenge3('aabdec', 'abc'))
-console.log(challenge3('aabdec', 'abac'))
+console.log(challenge3('aabdec', 'abaed'))

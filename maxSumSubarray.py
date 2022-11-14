@@ -11,6 +11,16 @@ def maxSumSubarray(arr, k):
     print(f'max sum of {k} index of {arr} is {ans}')
     return ans
 
+
+def algo_example(num_list, k):
+    new_num_list=[]
+    sub_list=[]
+    for i in range(len(num_list)-(k-1)):
+        sub_list=num_list[i:(k+i)]
+        summed_list=sum(sub_list)
+        new_num_list.append(summed_list)
+    return max(new_num_list)
+
  
 
 def max_sub_array_of_size_k(arr, k):
@@ -29,3 +39,4 @@ def max_sub_array_of_size_k(arr, k):
 
 maxSumSubarray([2, 1, 5, 1, 3, 2], k=3)
 print(max_sub_array_of_size_k([2, 1, 5, 1, 3, 2], 3))
+print(algo_example([2, 1, 5, 1, 3, 2], 3))
