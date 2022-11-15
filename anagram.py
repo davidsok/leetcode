@@ -17,4 +17,4 @@ def anagram(string, target) -> bool:
 
     return True
 
-print(anagram("star", "stra"))
+print(anagram("starr", "strar"))
